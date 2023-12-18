@@ -1,0 +1,555 @@
+*{
+	margin : 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	
+}
+.header {
+	 width: 100%;
+	height: 80px;
+	display: block;
+	background-color: #101010;
+	
+}
+.inner_header {
+
+	
+	height: 100%;
+	display: block;
+	margin:0 auto;
+	background-color: #101010;
+
+}
+
+.logo_container{
+	height: 100%;
+	display: table;
+	float: left;
+}
+.logo_container h1 {
+	color: white;
+	height: 100%;
+	display:table-cell;
+	vertical-align: middle;
+	font-family: Montserrat;
+	font-style: 32px;
+	font-weight: 200;
+
+}
+
+
+.logo_container h1 span {
+	font-weight: 800;
+}
+
+.toptitle {
+	height: 100%;
+	display: table;
+	float: right;
+	margin-left: 500px;
+	font-size: 25px;
+	
+}
+.toptitle h1{
+	font-family: impact; 
+}
+.socialmedia {
+	float:right;
+
+}
+.socialmedia ul {
+	list-style: none;
+}
+.socialmedia ul li {
+	display: inline;
+
+}
+.socialmedia ul li a {
+	      
+	padding: 10px;
+    font-size: 25px;
+    width: 15px;
+    text-decoration: none;
+    margin: 20px 2px;
+    color: white;
+
+
+}
+.socialmedia ul li a:hover {
+	color: blue ;
+}/*logo */
+ *{
+	margin:0;
+	padding:0;
+	font-family: 'josefin Sans' ,sans-serif;
+}
+
+section{
+	display:flex;
+	position:absolute;
+	z-index:4;
+}
+
+/*section 1*/
+.section1{
+	width:27vw;
+	margin-right:2%;
+	margin-left:5%;
+	
+	
+}
+ /*select items field*/
+#mySidenav a{
+	position:absolute;
+	left:68px;
+	transition: 0.3s;
+	padding:10px;
+	padding-left:50px;
+	width:180px;
+	text-decoration:none;
+	font-size:16px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover{
+	width:220px;
+}
+#fashionbrands{
+	top:160px;
+	background-color:#5A721A;
+}
+
+#sportT-shirts{
+	top:220px;
+	background-color:#2196F3;
+}
+#sportballs{
+	top:280px;
+    background-color:#f44336;
+}
+#bangles{
+	top: 340px;
+	background-color:#B09118;
+}
+#watches{
+	top:400px;
+	background-color:pink;
+}
+#ronaldotatus{
+	top:460px;
+	background-color:darkblue;
+}
+#caps{
+	top:520px;
+	background-color:yellow;
+}
+#specialofferes{
+	top:580px;
+	background-color:brown;
+}
+#Ronaldospecialevents{
+	top:650px;
+	background-color:#19e5e5;
+}
+.logo{
+	width:15vh;
+	height:10vh;
+}
+
+
+.navigation{
+	margin-top:2vh;
+	width:100%;
+	height:7vh;
+	background-color:#19e5e5;
+	border-radius:6px;
+	display:flex;
+	align-items:center;
+	
+}
+.toggle{
+	height:5vh;
+	width:2vw;
+	margin-left:5%;
+}
+.cgr{
+	margin-left:2%;
+}
+.submenu{
+	background-color:#ececfa;
+	display:block;
+	padding:4% 4%;
+	border-bottom:1px solid #a7a7ad;
+	padding-left:4%;
+}
+.submenu:hover{
+	cursor:pointer;
+	background-color:#ffffff;
+}
+.section1 .para1{
+         padding:4% 4%;
+         background-color:blue;
+         margin-top	:190%;
+         margin-bottom:2%;
+}
+
+.section1 .special .fieldset{
+         background-color:#ececfa;
+         border:1px solid #afafaf;
+         margin-top:10%;
+         height:20vh;
+}  		 
+.section  .special .img1{
+        width:15vw;
+        height:17vh;
+        padding-top:7%;
+        padding-left:3%;
+}
+.section1 .special .div1{
+            display:inline-block;
+            margin-left:5%;
+			
+}
+.section .special .div2{
+	position:absolute;
+	display:inline-block;
+	margin-left:1%;
+	width:10%;
+	heigh:15%;
+	
+}
+.special h3{
+	margin-bottom:2%;
+	margin-top:7%;
+	color:red;
+}
+.special strike{
+	font-size:1vw;
+	padding-left:4%;
+}
+.section1.special fieldset:nth-child(2) .img1{
+	height:18vh;
+	width:6vw;
+	padding-left:3%;
+}
+.section1.special fieldset:nth-child(3) .img1{
+	height:14vh;
+	width:5vw;
+	padding-left:3%;
+}
+.section1 .special fieldset:nth-child(4) .img1{
+	height:12vh;
+	weight:5vw;
+}
+.background{
+	
+}
+	
+			
+/* ******* */
+/*section 2*/
+.section2{
+	width:68vw;
+	display:inline-block;
+}
+.txtsrch{
+	margin-left:20%;
+	margin-top:5%;
+	width:23vw;
+	height:5vh;
+	border:1px ridge #d5d5e6;
+}
+.txtsrch[placeholder]{
+	padding-left:1%;
+}
+
+.btnsrch{
+	width:5vw;
+	height:5vh;
+	background-color:#19e5e5;
+	border:0px;
+}
+
+.call-icon{
+	height:4.5vh;
+	margin-left:0%;
+}
+
+
+nav{
+	padding:3%;
+	margin-top:2%;
+    width:100%;
+    height:2%;
+	background-clor:white;
+	border-radius:6px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+h1 {
+    text-align: center;
+    padding-top: 5px;
+	padding-left:30px;
+}
+.menuitem{
+	margin-top:1vh;
+	padding:3% 3% 3% 3%;
+	text-decoration:none;
+	background-color:black;
+	color:white;
+	font-family:"Lobster Two";
+	font-size:1.5vw;
+	box-shadow:10px 15px  50px black;
+}
+
+.menuitem:hover{
+	background-color:#1d9550;
+	box-shadow:none;
+}
+.slider{
+        background-color:#ececfa;
+        width:68vw;
+        height:52vh;
+        margin-top:7%;
+        overflow:hidden;
+		margin-top:15vh;
+}
+.slider .slides{
+         width:200vw;
+         height:52vh;
+         display:flex;
+}
+.slide1{
+         width:68vw;
+         height:52vh;
+}
+.slide1 .img1{
+         width:33vw;
+         height:38vh;
+         display:inline-block;
+		 margin-top:4%;
+}
+.slide1 .img2{
+	width:38vw;
+	height:50vh;
+}
+.slide1 .img3{
+	width:38vw;
+	height:52vh;
+}
+.constant{
+	position:absolute;
+	width:26vw;
+	height:52vh;
+	margin-left:36vw;
+}
+	
+.constant h1{
+	margin-top:10vh;
+	color:#19e5e5;
+	
+}
+.constant p{
+	font-family:"impact";
+	margin-top:1vh;
+	color:blue;
+}
+.constant .btnshopnow{
+	padding:4%;
+	color:white;
+	background-color: #ff3377 ;
+	border-radius:10px;
+	
+}
+.content1{
+       width:100%;
+       height:30vh;
+	   margin-top:1vh;
+	   display:flex;
+}
+.content1 .inner1{
+        width:50%;
+		height:100%;
+		text-align:right;
+		border:1px solid #afafaf;
+}
+.content1 .inner1 .img1{
+	    width:20vw;
+        height:35vh;
+}
+.content1 .inner2{
+        width:50%;
+        height:100%;
+        text-align:right;
+        border:1px solid #afafaf;
+		border-left:none;
+}
+.content1 .inner2 .img2{
+	     width:15vw;                   
+		 height:35vh;
+}
+.innertitle1{
+         position:absolute;
+         width:14vw;
+		 height:30%;
+		 text-align:center;
+		 margin-left:21%;
+		 color:red;
+}
+.innertitle2{
+	     position:absolute;
+		 width:20vw;
+		 height:30%;
+		 margin-left:51%;
+		 text-align:center;
+		 color:red;
+}
+
+.innertitle1 , .innertitle2{
+	      margin-top:2%;
+}
+.content1 .para1{
+	font-family:"pacifico";
+	
+	
+}
+.special.div2 , h3{
+	color:#04bfbf;
+}
+.featuredpara{
+	margin-top:7vh;
+	margin-bottom:3vh;
+	padding:2vh 66vw 1vw 4vh;
+	background-color:red;
+}
+.products{
+	width:68vw;
+	height:58vh;
+	display:flex;
+}
+
+.products fieldset{
+	width:20vw;
+	padding-left:2vw;
+	padding-right:2vw;
+	padding-top:4vh;
+	border:1px solid #afafaf;
+}
+legend{
+	padding:2% 2% 1% 2%;
+	background-color:black;
+	color:yellow;
+}
+.products .col1,col2{
+	margin-right:0vw;
+	
+}
+.products .col1 .img1{
+	width:17vw;
+	height:26vh;
+}
+.products .col2.img1{
+	width:11vw;
+	height:20vh;
+	padding-left:14%;
+}
+.products  .col3.img1{
+	width:13vw;
+	height:20vh;
+	padding-left:5%;
+}
+.products  h3{
+	padding-top:5vh;
+	color:#04bfbf;
+}
+.products h4,p{
+	color:white;
+}
+.products strike{
+	font-size:1vw;
+	padding-left:3%;
+}
+
+  	
+         		 
+
+.footer{
+        bottom:0px;
+        width:100vw;
+        height:30vh;
+        padding-top:190%;
+		display:block;
+		
+
+}
+.footer .outer{
+     background-color:#ececfa;
+     width:100vw;
+     height:40vh;
+     display:flex;
+     align-items:center;
+	
+}
+.footer .inner{
+        width:20%;
+        height:50%;
+        display:inline;
+        margin-left:8%;
+        border-right:1px solid #afafaf;
+}	
+.footer .inner2{
+        width:20%;
+        height:50%;
+        display:inline-block;
+        margin-left:3%;
+        border-right:1px solid #afafaf;
+}
+
+.footer a{
+        display:flex;
+		padding:2%;
+		color:#04bfbf;
+}
+.footer  .copyright{
+	    background-color:#ececfa;
+		
+	
+}
+
+.footer .copyright span{
+	margin-left:8vw;
+	
+}
+         		
+
+	
+
+/* ******** */	
+#increase-font,#decrease-font,#reset-font{
+	font-size:20px;
+	position:fixed;
+	right:5%;
+	background-clor:lightskyblue;
+	border:1px solid blue;
+	border-radius:50%;
+}
+#increase-font{
+	bottom: 20%;
+	padding: 10px 15.7px;
+/*------------------------extra--------------------*/
+
+
+
+
+
+
+
+
+
+
+
+

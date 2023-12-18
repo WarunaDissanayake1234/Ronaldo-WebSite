@@ -1,0 +1,333 @@
+.body {
+    margin: 0;
+}
+
+/**styling for the h1 tag**/
+h1 {
+    color: darkred;
+    font-size: 110px;
+    padding-left: 180px;
+    padding-top: 10px;
+    letter-spacing: 80px;
+    font-family: dense, sans-serif;
+    margin: 0px;
+
+}
+
+/**background image styling**/
+.backgroundimage {
+    background-image: url("images/backg.jpg");
+    background-color: ;
+    height: 1500px;
+    width: ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0px;
+
+}
+
+/**text styiling for the main tex body**/
+.introtext {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    background-color: ;
+    width: 903px;
+    height: 530px;
+    overflow: auto;
+    font-family: 'Red Rose', cursive;
+    letter-spacing: 1px;
+    margin: 12px;
+    font-size: 1.2vw;
+}
+
+/** stylings for the header buttons**/
+.btn-group button {
+    background-color: inherit;
+    border: 0px;
+    color: dimgrey;
+    padding: 20px 54px;
+    cursor: pointer;
+    float: right;
+    border-style: hidden;
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button: {
+    border-right: none;
+
+
+}
+
+.btn-group button:hover {
+    background-color: red;
+    border-radius: 10px;
+    opacity: 70%;
+    color:black;
+}
+
+/**horizontal line**/
+hr {
+    border: 1px solid grey;
+    width: 800px;
+}
+
+
+/**styling for the feedback page table**/
+
+.tabelstyle {
+    position: absolute;
+    top: 12px;
+    left: 540px;
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #403f3d;
+}
+
+/** scrollbar stylings**/
+/* setting the width of the scroller */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+    margin: 0px;
+    margin: 0px;
+}
+
+/* styilings for the scroller track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px grey;
+    border-radius: 10px;
+}
+
+/* stylings for the scroller handle */
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+/* hover effects of scroller handle */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+
+/**feedback page stylings**/
+
+
+.nametext {
+    position: absolute;
+    height: 40px;
+    width: 450px;
+    border: 1px solid red;
+    border-radius: 20%;
+}
+
+.textlabelname {
+    color: dimgray;
+    padding-top: 20;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+
+.inputfield {
+    position: absolute;
+    top: 45px;
+    left: 40px
+}
+
+.inputh2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: aliceblue
+}
+
+.inputtextfld {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #c91818;
+    border-radius: px;
+    box-sizing: border-box;
+    background-color: #858282;
+}
+
+/**placeholder color settings**/
+::placeholder {
+    color: burlywood;
+    opacity: 1;
+}
+
+
+
+.tablestyle {
+    border: 2px solid grey;
+}
+
+/**topic styles for feedbackpage**/
+.topic {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6.8vw;
+    position:relative;
+    top: 3%;
+}
+
+.submit {
+    font-family: cursive;
+    font-size: 20px;
+
+}
+
+.submitbt {
+    padding: 10px;
+}
+
+/**background and background image settings for feedbackpage**/
+.backgroundimage2 {
+    background-image: url("images/background2.jpg");
+    background-color: #070303;
+    height: 1200px;
+    width: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0px;
+
+}
+
+.inputh {
+    font-family: 'Red Rose', cursive;
+    font-size: 60px;
+    color: #adaca8;
+    font-weight: 100;
+}
+/**background and background image settings for video gallery**/
+.backgroundimage3 {
+    background-image: url("images/background1.jpg");
+    background-color: #070303;
+    height: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: inherit;
+    top: 40%;
+    margin: 0px;
+}
+
+.videoheads {
+    font-family: fantasy;
+    font-size: 50px;
+    letter-spacing: 10px;
+
+
+}
+/**viedo iframe settings**/
+.video1 {
+    position: relative;
+    left: 20%;
+    top: 6%;
+    padding: 20px;
+
+}
+
+.videoall {
+    position: relative;
+    left: -6%;
+    top: 6%;
+    padding: 20px;
+
+
+}
+
+.line {
+    position: relative;
+    top: 75%;
+}
+
+.social {
+    position: relative;
+    left: 47%;
+}
+
+.awards {
+    position: relative;
+    top: 8%;
+    left: 50%
+}
+
+/**radio buttons stylings**/
+
+.radio-toolbar {
+    position: relative;
+    left: 112%;
+    margin: 0px;
+}
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 100px;
+}
+
+/**radio buttons hover effects**/
+.radio-toolbar label:hover {
+    background-color: #7d6565;
+}
+
+.radio-toolbar input[type="radio"]:focus + label {
+    border: 3px dashed #444;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #b03e3e;
+    border-color: #adaaaa;
+}
+
+
+
+.inputhtextarea {
+    color: floralwhite;
+     font-family: sans-serif;
+    font-size: 20px;
+    
+}
+
+.headerfeedback {
+    width: 100%;
+	height: 80px;
+	display: block;
+	background-color: #101010;
+}

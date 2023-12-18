@@ -1,0 +1,75 @@
+
+.discription h3{
+	color:red;
+}
+.details h3{
+    color:red;
+}	
+
+	
+.special h3{
+	color:red;
+}
+p{
+	color:dimgrey;
+}
+.pictures h3{
+	color:red;
+}
+h1{
+color:white;
+}	
+.last h3{
+	color:red;
+}
+
+.btn-group button {
+    background-color: inherit;
+    /* Green background */
+    border:0px ;
+    /* Green border */
+    color: dimgrey;
+    /* White text */
+    padding: 20px 54px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: right;
+    border-style: hidden;
+    font-size: 30px;
+    
+margin: 0px;
+    margin-top: 0px;
+    /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+.btn-group button: {
+    border-right: none;
+    
+    /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: red;
+    border-radius: 10px;
+    opacity: 70%;
+    color:currentColor;
+}
+
+
+hr {
+    border: 1px solid grey;
+    width: 800px;
+}
+.label{
+     color: aqua;
+}
+

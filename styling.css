@@ -1,0 +1,29 @@
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.h2 {
+    color: darkred;
+    font-family: sans-serif
+}
+
+.Name {
+    font-family: sans-serif;
+
+
+}
+
+.insta {
+    height: 70px;
+    width: 70px;
+}
+
+.image2 {
+    height: 45px;
+    width: 45px;
+}
+
+.myclass {
+}

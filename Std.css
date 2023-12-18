@@ -1,0 +1,298 @@
+*{
+	margin : 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+body{
+	background-image: url("images/hhh.jpeg");
+	background-size: cover;
+	background-attachment:fixed;
+
+}
+
+
+	
+
+/*.header {
+	width: 100%;
+	height: 90px;
+	display: block;
+	background-color: #101010;
+}
+.inner_header {
+
+	
+	height: 100%;
+	display: block;
+	margin:0 auto;
+
+	background-color: #101010;
+
+}
+
+.logo_container{
+	height: 100%;
+	display: table;
+	float: left;
+}
+.logo_container h1 {
+	color: white;
+	height: 100%;
+	display:table-cell;
+	vertical-align: middle;
+	font-family: Montserrat;
+	font-style: 32px;
+	font-weight: 200;
+
+}
+
+
+.logo_container h1 span {
+	font-weight: 800;
+}
+
+.toptitle {
+	height: 100%;
+	display: table;
+	float: right;
+	margin-left: 400px;
+	font-size: 25px;
+	
+}
+.toptitle h1{
+	font-family: impact ;
+	padding-top: 5px;
+    padding-left: 120px;
+    
+}*/
+.socialmedia {
+	float:right;
+
+}
+.socialmedia ul {
+	list-style: none;
+}
+.socialmedia ul li {
+	display: inline;
+
+}
+.socialmedia ul li a {
+	      
+	padding: 10px;
+    font-size: 25px;
+    width: 15px;
+    text-decoration: none;
+    margin: 20px 2px;
+    color: white;
+
+
+}
+.socialmedia ul li a:hover {
+	color: blue ;
+}
+
+.About{
+	margin-top: 10px;
+	margin-left: 250px;
+	color: #928180;
+
+}
+.btn-group button {
+    background-color: inherit;
+    /* Green background */
+    border:0px ;
+    /* Green border */
+    color: dimgrey;
+    /* White text */
+    padding: 20px 54px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: right;
+    border-style: hidden;
+    font-size: 30px;
+    
+margin: 0px;
+    margin-top: 0px;
+    /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+.btn-group button: {
+    border-right: none;
+    
+    /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: red;
+    border-radius: 10px;
+    opacity: 70%;
+        color:currentColor;
+}
+
+.Images {
+	margin: 20px 50px 0 300px;
+}
+
+
+
+.std3{
+	width: 10%;
+	padding: 20px;
+	margin: 0;
+}
+
+.std3:hover .waru{
+	
+	opacity: 0.3;
+}
+.std3:hover .middle {
+  opacity: 1;
+}
+
+}
+.waru {
+	padding: ;
+	opacity: 1;
+	opacity: 1;
+    width: 200px;
+    height: 200px;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle{
+	transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 32%;
+    right: 0;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+
+.std2{
+	width: 10%;
+	padding: 20px;
+	margin: 0;
+}
+
+.std2:hover .Aru{
+	
+	opacity: 0.3;
+}
+.std2:hover .middle2 {
+  opacity: 1;
+}
+.middle2{
+	transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 65%;
+    right: 0;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.Aru{
+	
+	padding: ;
+	opacity: 1;
+	opacity: 1;
+    width: 200px;
+    height: 200px;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.std1{
+	width: 10%;
+	padding: 20px;
+	
+}
+
+.std1:hover .tharu{
+	
+	opacity: 0.3;
+}
+.std1:hover .middle3 {
+  opacity: 1;
+}
+
+}
+.tharu {
+	padding: ;
+	opacity: 1;
+	opacity: 1;
+    width: 200px;
+    height: 200px;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle3{
+	transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 97%;
+    right: 0;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+  background-color: #BF990D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+.text2 {
+  background-color: #E42F08;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text3 {
+  background-color: #6FBF6C;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+
