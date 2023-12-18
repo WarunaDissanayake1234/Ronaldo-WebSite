@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="allcss/main.css">
+    <meta name="author" content="Waruna Dissanayake">
+    <meta name="description" content="Quiz about Cristiano Ronaldo">
+
+    <style>
+        body {
+            background-image: url("allcss/images/backg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="btn-group scroll">
+            <img src="allcss/images/logo.jpeg" alt="Image" height="80" width="100">
+                    <a a href="warunapageedi.html" target="_blank">
+<button >INFO</button></a>
+            <a href="StdDetails.html" target="_blank">
+                <button>ABOUT</button></a>
+            <a href="20191003.html" target="_blank">
+                <button>STORE</button></a>
+            <a href="feedbackpage.html" target="_blank"><button >RATE</button></a>
+            <a href="index.html" target="_blank"><button>HOME</button></a>
+        </div>
+    </div>
+
+
+
+    <div class="quizhead">
+        <!--Quiz Title-->
+
+        <marquee behavior="alternate" scrollamount="20"><h1> QUIZ GAME </h1></marquee>
+
+
+    </div>
+    <!--/Quiz Title-->
+
+
+
+
+    <div class="after_btn" id="after_btn">
+
+        <input type="button" id="btn_1" value="START" class="btn" onclick="function_1();">
+
+        <form id="quiz" class="qiuz" name="quiz">
+
+            <p class="p1"> 1) What is Ronaldo's Nationality? </p>
+            <label class="radio1">
+                <input type="radio" name="question_1" value="Tamil"> Tamil <br>
+                <input type="radio" name="question_1" value="Portuguese"> Portuguese <br>
+            </label>
+
+            <p class="p2"> 2) Where did he born ? </p>
+            <label class="radio2">
+                <input type="radio" name="question_2" value="India"> India <br>
+                <input type="radio" name="question_2" value="Portugal"> Portugal <br>
+            </label>
+
+            <p class="p3"> 3) What is his height ? </p>
+            <label class="radio3">
+                <input type="radio" name="question_3" value="2 m"> 2 m <br>
+                <input type="radio" name="question_3" value="1.89 m"> 1.89 m <br>
+            </label>
+
+            <p class="p4"> 4) When is Ronaldo's birthday ? </p>
+            <label class="radio4">
+                <input type="radio" name="question_4" value="February 5, 1985"> February 5, 1985 <br>
+                <input type="radio" name="question_4" value="February 10, 198"> February 10, 1985 <br>
+            </label>
+
+            <p class="p5"> 5) What is his salary ? </p>
+            <label class="radio5">
+                <input type="radio" name="question_5" value="32 million"> 32 million <br>
+                <input type="radio" name="question_5" value="34 million"> 34 million <br>
+            </label>
+
+            <p class="p6"> 6) Which national team dose he play ? </p>
+            <label class="radio6">
+                <input type="radio" name="question_6" value="Portugal"> Portugal <br>
+                <input type="radio" name="question_6" value="India"> India <br>
+            </label>
+
+            <p class="p7"> 7) What is his place in the national team ? </p>
+            <label class="radio7">
+                <input type="radio" name="question_7" value="caption"> caption <br>
+                <input type="radio" name="question_7" value="goal keeper"> goal keeper <br>
+            </label>
+
+            <p class="p8"> 8) How many golden boot did he win ? </p>
+            <label class="radio8">
+                <input type="radio" name="question_8" value="4"> 4 <br>
+                <input type="radio" name="question_8" value="3"> 3 <br>
+            </label>
+
+            <p class="p9"> 9) how many children does Ronaldo have ? </p>
+            <label class="radio9">
+                <input type="radio" name="question_9" value="4"> 4 <br>
+                <input type="radio" name="question_9" value="6"> 6 <br>
+            </label>
+
+            <p class="p10"> 10) What is playing position in the national team ? </p>
+            <label class="radio10">
+                <input type="radio" name="question_10" value="Forward"> Forward <br>
+                <input type="radio" name="question_10" value="Striker"> Striker <br>
+            </label>
+
+
+
+
+
+
+
+
+            <input type="button" id="button" value="Finished" onclick="functioncheck();">
+
+            <p id="final"> </p>
+            <div id="container" class="container">
+                <div id="timeremaining"> time remaining: <span id="timeremainingvalue"> 120 </span> sec </div>
+
+            </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function function_1() {
+            document.getElementById("after_btn").style.visibility = "visible";
+            var timeremaining;
+            timeremaining = 60;
+            document.getElementById("timeremainingvalue").innerHTML = timeremaining;
+            startcountdown();
+
+
+        }
+
+        function functioncheck() {
+            var question1 = document.quiz.question_1.value;
+            var question2 = document.quiz.question_2.value;
+            var question3 = document.quiz.question_3.value;
+            var question4 = document.quiz.question_4.value;
+            var question5 = document.quiz.question_5.value;
+            var question6 = document.quiz.question_6.value;
+            var question7 = document.quiz.question_7.value;
+            var question8 = document.quiz.question_8.value;
+            var question9 = document.quiz.question_9.value;
+            var question10 = document.quiz.question_10.value;
+            var score = 0;
+
+            if (question1 == "Portuguese") {
+                score = score + 2
+                document.write("1) What is Ronaldo's Nationality?  Portuguese <span class='correct'> &#10004</span><br><br>");
+            } else {
+                score = score - 1
+                document.write("1) What is Ronaldo's Nationality? Tamil <span class='incorrect'>&#10006</span><br><br>");
+            }
+            if (question2 == "Portugal") {
+                score = score + 2
+                document.write("2) Where did he born ? Portugal <span class='correct'> &#10004</span><br><br>");
+            } else {
+                score = score - 1
+                document.write("2) Where did he born ? India <span class='incorrect'>&#10006</span><br><br> ");
+
+            }
+            if (question3 == "1.89") {
+                score = score + 2
+                document.write("3) What is his height ? 1.89 <span class='correct'>&#10004 </span><br><br>");
+            } else {
+                score = score - 1
+                document.write("3) What is his height ? 2 <span class='incorrect'>&#10006 </span><br><br>");
+            }
+            if (question4 == "February 5, 1985") {
+                score = score + 2
+                document.write("4)  When is Ronaldo's birthday ? February 5, 1985 <span class='correct'> &#10004</span><br><br>");
+            } else {
+                score = score - 1
+                document.write("4)  When is Ronaldo's birthday ? February 10, 1985 <span class='incorrect'> &#10006</span><br><br>");
+            }
+            if (question5 == "32 million") {
+                score = score + 2
+                document.write("5) What is his salary ? 32 million <span class='correct'> &#10004</span><br><br>");
+            } else {
+                score = score - 1
+                document.write("5) What is his salary ? 34 million <span class='incorrect'> &#10006</span><br><br>");
+            }
+            if (question6 == "Portugal") {
+                score = score + 2
+                document.write("6) Which national team dose he play  ? Portugal <span class='correct'> &#10004</span><br><br>");
+            } else {
+                score = score - 1
+                document.write("6) Which national team dose he play ? India <span class='incorrect'> &#10006</span><br><br>");
+            }
+            if (question7 == "caption") {
+                score = score + 2
+                document.write("7) What is his place in the national team ? caption <span class='correct'> &#10004</span><br><br>");
+            } else {
+                score = score - 1
+                document.write("7) What is his place in the national team ? goal keeper <span class='incorrect'> &#10006</span><br><br>");
+            }
+            if (question8 == "boot1") {
+                score = score + 2
+                document.write("8) How many golden boot did he win ? 3  <span class='correct'>&#10004 </span><br><br>");
+            } else {
+                score = score - 1
+                document.write("8) How many golden boot did he win ? 4 <span class='incorrect'> &#10006</span><br><br>");
+            }
+            if (question9 == "4") {
+                score = score + 2
+                document.write("9) How many children does Ronaldo have ? 4 <span class='correct'> &#10004</span><br><br>");
+            } else {
+                score = score - 1
+                document.write("9) How many children does Ronaldo have ? 6 <span class='incorrect'> &#10006</span><br><br>");
+            }
+            if (question10 == "Forward") {
+                score = score + 2
+                document.write("10) What is playing position in the national team ? Forward <span class='correct'> &#10004</span><br><br>");
+            } else {
+                score = score - 1
+                document.write("10) What is playing position in the national team ? Striker <span class='incorrect'>&#10006</span><br><br>");
+            }
+
+            if (score < 1) {
+                document.body.style.backgroundColor = "#ff842b";
+            } else {
+                document.body.style.backgroundColor = "#aaec68";
+            }
+
+            document.getElementById("final").innerHTML = "your score is " + score;
+
+
+
+        }
+
+        function startcountdown() {
+
+            var timeremaining;
+            var action;
+            timeremaining = 120;
+
+
+            action = setInterval(function() {
+                timeremaining -= 1;
+                document.getElementById("timeremainingvalue").innerHTML = timeremaining;
+            }, 1000);
+
+
+        }
+    </script>
+    <div class="socialmedia">
+        <!--Social Media-->
+        <ul>
+
+              <li><a href="https://www.facebook.com/Cristiano" class="fa fa-facebook"></a></li>
+                <li><a href="https://twitter.com/Cristiano" class="fa fa-twitter"></a></li>
+                <li><a href="https://www.youtube.com/user/CristianoRonaldo" class="fa fa-youtube"></a></li>
+                <li><a href="https://www.instagram.com/cristiano/" class="fa fa-instagram"></a></li>
+
+        </ul>
+
+    </div> <!-- /Social Media -->
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+</body></html>

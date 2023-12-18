@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Give Us Feedback</title>
+     <meta name="author" content="Aruna Randika">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="allcss/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <script src="javascript/index.js"></script>
+    <div class="backgroundimage2">
+        <div class="headerfeedback">
+          <!--header buttons-->
+            <div class="btn-group scroll">
+                <!--Logo importing-->
+                <img src="allcss/images/logo.jpeg" alt="cristiano ronaldo logo CR7" height="80" width="100" alt="Cristiano Ronaldo Logo CR7">
+                <!--buttons in the header area-->
+                <a href="StdDetails.html" target="_blank">
+                    <button>ABOUT</button></a>
+                <a href="20191003.html" target="_blank">
+                    <button>STORE</button></a>
+                <a href="warunaquiz.html" target="_blank">
+                    <button>QUIZ</button></a>
+                <a href="videogal.html" target="_blank"><button>VIDEOS</button></a>
+                <a href="index.html" target="_blank"><button>HOME</button></a>
+            </div>
+        </div>
+        <!--form  area inputs-->
+        <div class="inputfield">
+            <h2 class="inputh">What do you think about our Website?</h2>
+            <table class="tablestyle">
+                <tr>
+                    <td></td>
+                </tr>
+                <form name="form">
+                    <tr>
+                        <td><label class="inputh2">Name</label></td>
+                        <td><input type="text" class="inputtextfld" placeholder="Enter Name" id="namefield" /></td></tr>
+                    <tr>
+                        <td><label class="inputh2">Email</label>
+                        </td>
+                        <td><input type="email" class="inputtextfld" placeholder="Enter Email" id="emailfield" /></td>
+                    </tr>
+                    <tr>
+                        <td class="inputhtextarea"><label>Your Comment</label></td>
+                        <td><textarea rows="10" cols="41" placeholder="Enter Comments" id="comments" class="inputtextfld"></textarea></td></tr>
+                    <tr>
+                        <td>
+                            <!--assigning radio buttons-->
+                            <div class="radio-toolbar">
+                                <input type="radio" id="bad" name="A" value="Bad">
+                                <label for="bad">Bad</label>
+                                <input type="radio" id="neutral" name="A" value="Neutral">
+                                <label for="neutral">Neutral</label>
+                                <input type="radio" id="good" name="A" value="Good" checked>
+                                <label for="good">Good</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="submitbt"><button class="submit" onclick="myFunction()">Submit</button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

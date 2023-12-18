@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<htlml>
+<head>
+<title>Buy Now
+</title>
+<style>
+body{
+		    background-image:url("allcss/images/buyitnow.jpg");
+			background-size: cover;
+			background-attachment:fixed;
+            color: aliceblue;
+        }
+.content{
+		    background:white;
+			width: 100%
+			padding: 400px;
+			margin: 100px auto;
+			
+		}
+
+img{
+           
+		 
+		  padding:0px;
+		  width:250px;
+		  height:250px;
+		  float:left;
+		  
+		 
+		  
+}		  
+
+.container{
+	    width: 100%;
+		padding: 10px;
+		margin: 120px auto;
+		display:flex;
+		justify-content: center;
+		
+		
+		}
+.box{
+          width: 250px;
+          height: 250px;
+          background : black;
+		  float:left;
+		  margin: 0px  10px;
+		  transition:1s;
+		  border-color:blue;
+		  border-style: solid;
+		  
+		  }
+.box:hover{
+	      transform:scale(1.1);
+		  background:black;
+		  box-shadow:2px 2px 2px #000;
+		  z-index:2;
+		  }
+
+}
+		
+ .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+background-color: #3e8e41;
+color:red;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+h2,h3{
+color:red;
+size:100px;
+text-align:center;
+
+}
+h4{
+color:green;
+text-align:center;
+
+}	
+.inputs{
+    text-align:center;
+}
+.quizhead{
+	background-color:dimgrey;
+	text-align:center;
+	color:white;
+	border-size:10px;
+}
+    .f1{
+    color: aliceblue;
+    }
+</style>
+</head>
+<body>
+<div class="quizhead">
+<marquee behavior="alternate" scrollamount="20"><h1> !Welcome ronaldo fashion store! </h1></marquee>	
+</div>
+<h2 class="ti"><center><b><u> Ronaldo Item Collection</u></b></center></h2><!--title of the order form.-->
+    <div class="container">
+	    <div class="articles">
+		    
+			<!--This part use box class for styling the product-->
+			    <div class="box"><img src="allcss/images/tank-top-32.jpg"></div>
+				<div class="prod">
+				    <h3 class="tit" id="brand1">Cramble</h3>
+					<h4 id="price1">19.90</h4>
+					<h4>$</h4>
+					
+					
+				</div>
+				<div class="inputs">
+				    <input type="number" id="quantity1" name="quantity1"  min="1" max="3" value="1"><!--given the details of how many products, customer can buy.-->
+					<select id="size1" name="size1" onclick="deleteE('message1')">
+					    <option value="size" disabled selected>Size</option>
+						<option value="XS">XS</option><!--what are the sizes-->
+						<option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+					</select>
+					<div>
+                        <button class="addTo" onclick="add(1)">Add</button><!--when clicked add button calculate ,shown what are orderded and full total price.-->
+					</div>	
+                </div>
+                <p id="message1"></p>				
+            </div>
+            <div>
+			    <div class="box"><img src="allcss/images/010-engage-nike-radiation-flare-pack-mercurial.jpg"></div>
+				<div class="prod">
+				    <h3 class="tit" id="brand2">Nike</h3>
+					<h4 id="price2">29.90</h4>
+					<h4>$</h4>
+					
+				</div>
+				<div class="inputs">
+				    <input type="number" id="quantity2" name="quantity2" min="1" max="3" value="1">
+					<select id="size2" name="size2" onclick="deleteE('message2')">
+					    <option value="size" disabled selected>Size</option>
+						
+						<option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        
+					</select>
+					<div>
+                        <button class="addTo" onclick="add(2)">Add</button>
+                    </div>
+				</div>
+				<p id="message2"></p>	
+            </div>
+			<div>
+			    <div class="box"><img src="allcss/images/petit-melrose-black.png"></div>
+				<div class="prod">
+				    <h3 class="tit" id="brand3">Jdk</h3>
+					<h4 id="price3">18.90</h4>
+					<h4>$</h4>
+				</div>
+            <div class="inputs">
+				    <input type="number" id="quantity3" name="quantity3"  min="1" max="3" value="1">
+					<select id="size3" name="size3" onclick="deleteE('message3')">
+					    <option value="size"  disabled selected>Size</option>
+						
+						<option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        
+					</select>
+					<div>
+                        <button class="addTo" onclick="add(3)">Add</button>
+                    </div>
+					
+            </div>
+			 
+			<p id="message3"></p>	
+        </div>
+		<div class="cart">
+		    <h3 class="tit">My Ordered Items</h3>
+			<!--list of the articles in the cart-->
+			<ul id="items">
+			</ul>
+			<h3 id="total" style="text-align: right;  ">Total: 0 $</h3>
+		</div>
+	</div>
+	
+<div>
+			 <form name="f1" class="f1"><!--create a order form-->
+			 <fieldset>
+			 <legend><b>"customer details"</b></legend><!-- use fieldset and legend command for get auto frame.-->
+               <b> Name:</b><br><input type="text" name="txtName" id="idName"  /> <br> 
+               <b> you have ordered:</b><br><input type="text" name="txyou have ordered"/> <br>
+               <b> Address:</b><br><input type="text" name="txtAddress" id="idAddress"/> <br>
+               <b> cost:</b><br><input type="text" name="txcost" /> <br>
+			   <b> province:</b><br><input type="text" name="txprovince" /> <br>
+			   <b> Telepnone no:</b><br><input type="text" name="txTelephone no" /> <br>
+			   <b> Account no:</b><br><input type="text" name="txAccount no" /> <br>
+			   
+                <br><b> <input type="submit" value="place order" onclick="showData();" /></b> <br><!--when you clicked the place order button,you can see what are the your ordered and your full cost.-->
+            </form>
+			</fieldset></div>
+
+
+
+
+    <button class="button" onclick="myFunction()">GO BACK</button><!--go to the see buy product web page-->
+	
+	
+
+    <script>
+	// Go to the buy products web page
+	function myFunction() {
+    location.replace("file:///C:/Users/Tharusha/Desktop/web%20cw%202/20191003.html")
+	
+} 
+// The following code shown  customer order details.   
+    function showData() { 
+    var name=document.forms["f1"].txtName.value;
+    var youhaveordered=document.forms[0].elements[2].value;
+    var cost=document.forms[0].elements[4].value;	
+    var address=document.getElementById("idAddress").value;
+	var correct = false;
+	
+	 if (name == "" || youhaveordered == "" || address == "" || cost==""){
+        alert("Please fill in all the fields");
+        correct = true;
+    }
+	 if (correct == false){
+	 alert("Your details are "+" "+"Dear"+"  "+name+", "+"you have ordered"+"  "+youhaveordered+"  "+"transport address"+"  "+address+"   "+"total cost is:"+" "+cost);}
+ }
+	    // Cost of all products in the cart
+		var total = 0;
+		//Index 
+		var i = 1;
+		//Message
+		var message = "Please select a size";
+		//List of the amount of every product in the cart
+		var itemCost = [];
+		
+		//Add to cart
+		function add(n){
+		    
+		    // n is the rank of the T-shirt
+			sizeId = "size" + n;
+			/* Each shirt has Id start with a root + his rank (Ex: Size id for product 1 is size1,
+			price id for product 3 is price 3 ...)*/
+			messageId = "message" + n;
+			//The size of the selected shirt
+			size = document.getElementById(sizeId).value;
+			//If the client don't select size, a message will show up
+			if (size==="size"){
+			    document.getElementById(messageId).innerHTML = message;
+				return 0;
+			}
+			//Getting all Id of the selected shirt(brand ex: nike,price and quantity)
+			brand = "brand" + n;
+			priceId = "price" + n;
+			quantityId = "quantity" + n;
+			// Getting details of the selected shirt
+			//brand
+			name = document.getElementById(brand).innerHTML;
+			//price
+			price = document.getElementById(priceId).innerHTML;
+			//quantity
+			quantity = document.getElementById(quantityId).value;
+			//Creating a li element to add it to ul
+			var node = document.createElement("LI");
+			// id of li element
+			item = "item"+i;
+			node.setAttribute("id", item)
+			// cost of the selected shirt
+			itemCost[i-1] = Number(price) * Number(quantity);
+			// Updating the index i
+			i += 1;
+			
+			// text of the li element
+			var textnode = document.createTextNode(name+" "+quantity+" x "+price+" $, size: "+ size);
+			
+			// add the text to li element
+			node.appendChild(textnode);
+			// add li element to ul list
+			document.getElementById("items").appendChild(node);
+			
+			total += Number(price) * Number(quantity);
+			// update the total
+			document.getElementById("total").innerHTML = "Total:"  + total.toFixed(2) + " $";
+			
+			// Add a remove button
+			document.getElementById(item).innerHTML += '<button onclick="deleteItem('+"'"+item+"'"+')">x</button>';
+			//you have to respect the order of:'' and ""
+		}
+		
+		// delete message when the select element is clicked
+		function deleteE(eId){
+		    document.getElementById(eId).innerHTML = ' ';
+		}
+		
+		// Remove a product from the cart
+		function deleteItem(eId){
+		    document.getElementById(eId).remove();
+			// slice is string method
+			// eId (element Id) contain root + number (ex:item4)
+			// n is the number in eId
+			n = Number(eId.slice(-1)) - 1;
+			// remove the cost of the product deleted from the cart
+			total -= itemCost[n];
+			//Updating the cost of products in the cart
+			
+		}	
+	
+		
+		
+    </script>
+
+
+   
+</body>
+</html>
